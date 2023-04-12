@@ -2,7 +2,7 @@
 plugins {
     `java-library`
     `maven-publish`
-    id("dev.sigstore.sign") version "0.4.1"
+    id("dev.sigstore.sign") version "0.4.2"
 }
 
 group = "org.example"
@@ -26,8 +26,4 @@ publishing {
     repositories {
         maven(url = uri("${rootProject.buildDir}/repo"))
     }
-}
-
-sigstoreSign {
-    sigstoreJavaVersion.set("0.4.0")
 }
